@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Campus Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="home-container">
+    <h1>Smart Campus Lost & Found</h1>
+    <p class="tagline">Find what’s lost. Return what’s found.</p>
+
+    <input type="text" placeholder="Enter your name">
+
+    <div class="button-group">
+      <button class="lost-btn" onclick="location.href='report-lost.html'">
+        Report Lost Item
+      </button>
+
+      <button class="found-btn" onclick="location.href='report-found.html'">
+        Report Found Item
+      <button class="btn" onclick="location.href='view-items.html'">
+        View items
+      </button>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
